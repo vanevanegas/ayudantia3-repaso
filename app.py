@@ -25,6 +25,7 @@ def servicios():
 def reglamentos():
     return render_template("reglamentos.html")
 
+
 @app.route("/contacto")
 def contacto():
     return render_template("contacto.html")

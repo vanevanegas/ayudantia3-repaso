@@ -1,4 +1,4 @@
-
+//Funcion para mostrar contenido de pestañas de HTML
 function hideDivById(divId) {
     hideAllDivW3Includes()
     var element = document.getElementById(divId)
@@ -7,6 +7,7 @@ function hideDivById(divId) {
     }
 }
 
+//Ocultar todo el contenido de pestañas de HTML
 function hideAllDivW3Includes() {
     var elementArray = document.getElementsByName("pages")
     for (var element of elementArray) {
@@ -16,13 +17,13 @@ function hideAllDivW3Includes() {
 
 w3.includeHTML()
 
-//Send Contact email
-function sendEMail() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
+//Enviar correo
+function sendEmail() {
+    var name = document.getElementById("name").value
+    var email = document.getElementById("email").value
+    var message = document.getElementById("message").value
 
-    alert("De: " + name + " <" + email + "> \nMensaje:\n" + message);
+    alert("De: " + name + " <" + email + "> " + "\n Mensaje: \n " + message)
 
 }
 
